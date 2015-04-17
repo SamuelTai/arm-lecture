@@ -19,7 +19,7 @@ fibonacci:
 .loop:
 	add r0,r5,r6
 	mov r5,r6
-	mov r5,r0
+	mov r6,r0
 
 	subs r4,r4,#1
 	bne .loop
