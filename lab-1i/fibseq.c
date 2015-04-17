@@ -10,25 +10,24 @@ int main(int argc, char **argv)
   clock_t start_time;
   clock_t current_time;
   float time_interval;
-  int a =1;
+  int a =-1;
   int b = 1;
   int c;
   scanf("%d",&number);
   start_time = clock();
-  	for( i = 1 ;i <= number;i++)
+  	for( i = 0 ;i <= number;i++)
   	{	
-	  if( i <=2){ 
+	 /* if( i <=2){ 
 		current_time = clock();
 		time_interval = current_time - start_time;
           	printf("The fibonacci sequence at %d is: %d   %f \n", i,1,time_interval );
 		     }
-	  else{
+	  else{*/
 	  c = a+b;
-	  b = a  ;
-	  a = c  ;
+	  a = b  ;
+	  b = c  ;
 	  current_time = clock();
 	  time_interval = current_time - start_time;
           printf("The fibonacci sequence at %d is: %d   %f \n", i, c,time_interval);}
-  	}	
 
 }
